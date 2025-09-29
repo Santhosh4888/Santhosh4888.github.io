@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Santhosh Kotha — Portfolio</title>
+  <meta name="description" content="Portfolio of Santhosh Kotha: Research in Control Systems, Autonomous Driving, Vehicle Dynamics, and Mechatronics at IIT Madras." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%2300b3a4'/%3E%3Ctext x='50' y='58' text-anchor='middle' font-size='56' font-family='Arial' fill='white'%3ES%3C/text%3E%3C/svg%3E"/>
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Santhosh Kotha — Portfolio" />
+  <meta property="og:description" content="Graduate Research in Control Systems, Autonomous Driving, and Applied Vehicle Dynamics." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://santhoshkotha.github.io/" />
+
+  <!-- Schema.org Person JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Santhosh Kotha",
+    "url": "https://santhoshkotha.github.io/",
+    "jobTitle": "Research Assistant, Autonomous Systems Lab",
+    "affiliation": {"@type":"Organization","name":"IIT Madras"},
+    "sameAs": ["https://github.com/Santhosh4888","https://www.linkedin.com/in/santhoshraokotha"]
+  }
+  </script>
+
+  <style>
+    /* Same CSS as Swapnil template, unchanged */
+    :root{
+      --bg: #0b0f14;
+      --card:#121923;
+      --text:#e7edf5;
+      --muted:#9bb2c7;
+      --accent:#4dd0e1;
+      --accent-2:#7cf5c4;
+      --link:#7cc8ff;
+      --shadow: 0 8px 30px rgba(0,0,0,.35);
+    }
+    :root.light{
+      --bg:#f6f8fb;
+      --card:#ffffff;
+      --text:#0c1220;
+      --muted:#4a6072;
+      --accent:#0077ff;
+      --accent-2:#00b3a4;
+      --link:#0055cc;
+      --shadow: 0 8px 24px rgba(0,0,0,.08);
+    }
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui}
+    .container{max-width:980px;margin:0 auto;padding:24px}
+    header{position:sticky;top:0;background:linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,0));backdrop-filter:saturate(1.2) blur(10px);z-index:10}
+    nav{display:flex;gap:16px;align-items:center;justify-content:space-between}
+    nav .left{display:flex;gap:14px;align-items:center}
+    nav a{color:var(--muted);text-decoration:none;font-weight:600}
+    nav a:hover{color:var(--text)}
+    .brand{display:flex;gap:12px;align-items:center}
+    .avatar{width:40px;height:40px;border-radius:50%;box-shadow:var(--shadow);background:linear-gradient(135deg,var(--accent),var(--accent-2))}
+    .pill{padding:4px 10px;border:1px solid rgba(255,255,255,.12);border-radius:999px}
+    .theme{border:1px solid rgba(255,255,255,.12);background:transparent;color:var(--text);padding:6px 10px;border-radius:10px;cursor:pointer}
+
+    .hero{display:grid;gap:22px;grid-template-columns:120px 1fr;align-items:center;margin-top:18px}
+    .hero .photo{width:120px;height:120px;border-radius:18px;background:linear-gradient(135deg,var(--accent),var(--accent-2));box-shadow:var(--shadow);background-image:url('./Photo.jpeg');background-size:cover;background-position:center}
+    h1{font-size:34px;line-height:1.15;margin:0}
+    .subtitle{color:var(--muted)}
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+    .chip{background:var(--card);border:1px solid rgba(255,255,255,.08);box-shadow:var(--shadow);padding:6px 10px;border-radius:999px;color:var(--muted)}
+
+    section{margin:40px 0;padding:24px;border-radius:18px;background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.015));border:1px solid rgba(255,255,255,.06)}
+    section h2{margin:0 0 16px 0;font-size:22px}
+    .grid{display:grid;gap:16px}
+    .pub{display:grid;gap:8px;padding:14px;border-radius:14px;background:var(--card);border:1px solid rgba(255,255,255,.06)}
+    .pub .title{font-weight:700}
+    .pub .meta{color:var(--muted);font-size:14px}
+    .pub .links a{margin-right:10px}
+    a{color:var(--link)}
+
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:16px;box-shadow:var(--shadow)}
+    .card h3{margin:0 0 6px 0}
+    .card p{margin:0}
+
+    .experience-item{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:16px;margin-bottom:16px}
+    .experience-item h3{margin:0 0 6px 0;color:var(--accent)}
+    .experience-item .company{font-weight:600;color:var(--text)}
+    .experience-item .duration{color:var(--muted);font-size:14px}
+    .experience-item ul{margin:8px 0;padding-left:20px}
+    .experience-item ul li{margin:4px 0}
+
+    footer{margin:48px 0 16px;color:var(--muted);text-align:center}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="left">
+          <div class="brand">
+            <div class="avatar"></div>
+            <a href="#top" class="pill">Santhosh Kotha</a>
+          </div>
+          <a href="#about">About</a>
+          <a href="#research">Research</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <button class="theme" id="themeToggle">🌓</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="container">
+    <section class="hero" id="about">
+      <div class="photo"></div>
+      <div>
+        <h1>Hi, I'm <span style="background:linear-gradient(135deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent">Santhosh Kotha</span>.</h1>
+        <p class="subtitle">MS Student @ IIT Madras | Research in Control Systems, Autonomous Driving, Vehicle Dynamics & Mechatronics | Autonomous Systems Lab</p>
+        <div class="chips">
+          <span class="chip">santhosh@example.com</span>
+          <a class="chip" href="https://github.com/Santhosh4888" target="_blank">GitHub</a>
+          <a class="chip" href="https://www.linkedin.com/in/santhoshraokotha" target="_blank">LinkedIn</a>
+          <a class="chip" href="./Santhosh_Kotha_CV.pdf" target="_blank">CV (PDF)</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="research">
+      <h2>Research Interests</h2>
+      <p>My research focuses on control systems for autonomous driving, with applications in Adaptive Cruise Control, drive-by-wire systems, vehicle dynamics modeling, and advanced driver-assistance systems (ADAS).</p>
+      <div class="cards">
+        <div class="card">
+          <h3>Adaptive Cruise Control</h3>
+          <p>Designed MPC and PD controllers for low-speed collision avoidance in stop-and-go traffic, validated on a drive-by-wire EV testbed.</p>
+        </div>
+        <div class="card">
+          <h3>Vehicle Dynamics Simulation</h3>
+          <p>Developed a 15-DOF vehicle model in MATLAB/Simulink with tire, suspension, and ABS control modules for stability analysis.</p>
+        </div>
+        <div class="card">
+          <h3>Brake & Motor Control</h3>
+          <p>Implemented PI and P/PI controllers for induction motor speed control and electro-pneumatic brake systems with delay compensation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="experience-item">
+        <h3>Research Assistant</h3>
+        <div class="company">Autonomous Systems Lab, IIT Madras</div>
+        <div class="duration">Jan 2024 – Present</div>
+        <ul>
+          <li>Developed MPC and PD controllers for Adaptive Cruise Control in EVs</li>
+          <li>Implemented hierarchical control with ROS (high-level) and Arduino (low-level) via CAN</li>
+          <li>Validated controllers on a drive-by-wire EV testbed</li>
+        </ul>
+      </div>
+      <div class="experience-item">
+        <h3>Associate Mechanical Engineer</h3>
+        <div class="company">L&T Technology Services</div>
+        <div class="duration">Sep 2022 – Dec 2023</div>
+        <ul>
+          <li>Designed and sustained medical devices ensuring FDA/ISO compliance</li>
+          <li>Managed lifecycle of 365 devices with PLM systems</li>
+        </ul>
+      </div>
+      <div class="experience-item">
+        <h3>R&D Intern</h3>
+        <div class="company">Automotive Research Association of India (ARAI)</div>
+        <div class="duration">Apr 2022 – Aug 2022</div>
+        <ul>
+          <li>Developed cooling strategies for EV batteries using multiphysics simulations</li>
+          <li>Validated battery performance under different charging/discharging cycles</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Master of Science - Engineering Design</h3>
+          <p><strong>Indian Institute of Technology, Madras</strong> (2023 - 2026)</p>
+          <p>Specialization: Automotive Systems & Mechatronics | CGPA: 8.22/10</p>
+        </div>
+        <div class="card">
+          <h3>Bachelor of Technology - Mechanical Engineering</h3>
+          <p><strong>JNTU Hyderabad</strong> (2018 - 2022)</p>
+          <p>CGPA: 8.59/10</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cv">
+      <h2>CV</h2>
+      <p>Download my complete CV: <a href="./Santhosh_Kotha_CV.pdf" target="_blank" rel="noopener">CV (PDF)</a></p>
+      <p>Current CGPA: 8.22/10 | Expected Graduation: 2026</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:santhosh@example.com">santhosh@example.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/santhoshraokotha" target="_blank">Profile</a></p>
+      <p>GitHub: <a href="https://github.com/Santhosh4888" target="_blank">Repos</a></p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Santhosh Kotha · Built with HTML/CSS · <a href="#top">Back to top</a>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const root = document.documentElement;
+    let currentTheme = 'dark';
+    function applyTheme(theme){
+      if(theme === 'light') root.classList.add('light');
+      else root.classList.remove('light');
+      currentTheme = theme;
+    }
+    applyTheme(currentTheme);
+    document.getElementById('themeToggle').addEventListener('click', ()=>{
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      applyTheme(newTheme);
+    });
+  </script>
+</body>
+</html>
