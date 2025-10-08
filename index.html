@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Santhosh Kotha — Portfolio</title>
-  <meta name="description" content="Portfolio of Santhosh Kotha: Research in Autonomous Driving, Advanced Driver Assistant Systems(ADAS), Control Systems,Vehicle Dynamics, and Mechatronics at IIT Madras." />
+  <meta name="description" content="Portfolio of Santhosh Kotha: Graduate Research in Autonomous Driving, Advanced Driver Assistant Systems(ADAS), Control Systems and Mechatronics at IIT Madras." />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%2300b3a4'/%3E%3Ctext x='50' y='58' text-anchor='middle' font-size='56' font-family='Arial' fill='white'%3ES%3C/text%3E%3C/svg%3E"/>
 
   <!-- Open Graph / Twitter -->
@@ -117,19 +117,19 @@
       <div class="photo"></div>
       <div>
         <h1>Hi, I'm <span style="background:linear-gradient(135deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent">Santhosh Kotha</span>.</h1>
-        <p class="subtitle">MS Student @ IIT Madras | Research in Control Systems, Autonomous Driving, Vehicle Dynamics & Mechatronics | Autonomous Systems Lab</p>
+        <p class="subtitle">MS Student @ IIT Madras | Graduate Research in Autonomous Driving, Advanced Driver Assistant Systems(ADAS), Control Systems and Mechatronics | Autonomous Systems Lab</p>
         <div class="chips">
           <span class="chip">santhoshrao4888@gmail.com</span>
-          <a class="chip" href="https://github.com/Santhosh4888" target="_blank">GitHub</a>
-          <a class="chip" href="https://www.linkedin.com/in/santhoshraokotha" target="_blank">LinkedIn</a>
-          <a class="chip" href="./assets/docs/Santhosh_Kotha_CV.pdf" target="_blank">CV</a>
+          <a class="chip" href="https://github.com/Santhosh4888" target="_blank" rel="noopener">GitHub</a>
+          <a class="chip" href="https://www.linkedin.com/in/santhoshraokotha" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="chip" href="./assets/docs/Santhosh_Kotha_CV.pdf" target="_blank" rel="noopener">CV</a>
         </div>
       </div>
     </section>
 
     <section id="research">
       <h2>Research Interests</h2>
-      <p>My research focuses on control systems for autonomous driving, with applications in Adaptive Cruise Control, drive-by-wire systems, vehicle dynamics modeling, and advanced driver-assistance systems (ADAS).</p>
+      <p>My research focuses on developing control systems for autonomous driving, with applications in Advanced driver-assistance systems (ADAS), Adaptive Cruise Control, Drive-by-wire systems and vehicle dynamics modeling.</p>
       <div class="cards">
         <div class="card">
           <h3>Adaptive Cruise Control</h3>
@@ -151,11 +151,14 @@
       <div class="experience-item">
         <h3>Research Assistant</h3>
         <div class="company">Autonomous Systems Lab, IIT Madras</div>
-        <div class="duration">Jan 2024 – Present</div>
+        <div class="duration">Jan 2024 – Present(2+ years) </div>
         <ul>
-          <li>Developed MPC and PD controllers for Adaptive Cruise Control in EVs</li>
-          <li>Implemented hierarchical control with ROS (high-level) and Arduino (low-level) via CAN</li>
-          <li>Validated controllers on a drive-by-wire EV testbed</li>
+          <li>Developed and validated a low-speed Adaptive Cruise Control (ACC) framework for a drive-by-wire electric vehicle, addressing the limitations of conventional ACC in stop-and-go traffic.</li>
+          <li>Conducted System identification using vehicle test data, employing both linear regression models and non-linear methods (NN, LSTM, and CNN-LSTM) to accurately capture vehicle dynamics.</li>
+          <li>Implemented and compared PD and MPC controllers across multiple traffic scenarios (cut-in, stop-and-go), evaluating stability, safety margins, and passenger comfort.</li>
+          <li>Designed a hierarchical control system with a ROS-based Model Predictive Controller (MPC) as the high-level controller and Arduino with CAN Bus as the low-level executor for throttle and brake actuation.</li>
+          <li>Realized a brake-by-wire system using a linear actuator with closed-loop control, enabling precise braking response for autonomous driving.</li>
+          <li>Experimental validation on EV test bed confirmed the proposed framework’s effectiveness in reducing oscillations, improving safety margins, and ensuring energy-efficient operation.  </li>
         </ul>
       </div>
       <div class="experience-item">
@@ -163,8 +166,15 @@
         <div class="company">L&T Technology Services</div>
         <div class="duration">Sep 2022 – Dec 2023</div>
         <ul>
-          <li>Designed and sustained medical devices ensuring FDA/ISO compliance</li>
-          <li>Managed lifecycle of 365 devices with PLM systems</li>
+          <li>Design & Sustenance for New Manufacturing Line</li>
+          <li>Designed and sustained medical and automotive device components, applying DFM/DFA, GD&T, and tolerance analysis to meet new manufacturing line requirements.</li>
+          <li>Replaced obsolete components with compatible alternatives, validated designs, and ensured compliance with FDA/ISO standards.</li>
+          <li>Maintained detailed design documentation, 3D models, and technical drawings in PLM12 systems.</li>
+          <li>Addressed obsolete components, resolved production issues, adapted designs for new tooling, and implemented CAPA to support reliable, compliant, and efficient manufacturing.</li>
+
+          <li>Product Lifecycle Management of Medical Devices</li>
+          <li>Managed the lifecycle of 365 medical devices, including creating engineering change orders (ECO), coordinating stakeholder approvals, and updating BOM’s, part numbers, and specifications on PLM sites.</li>
+          <li>Oversaw product changes, validation, and execution across various devices.</li>
         </ul>
       </div>
       <div class="experience-item">
@@ -172,11 +182,50 @@
         <div class="company">Automotive Research Association of India (ARAI)</div>
         <div class="duration">Apr 2022 – Aug 2022</div>
         <ul>
-          <li>Developed cooling strategies for EV batteries using multiphysics simulations</li>
-          <li>Validated battery performance under different charging/discharging cycles</li>
+          <li>Contributed to the design and optimization of active thermal management strategies for 2-W EV battery systems.</li>
+          <li>Performed simulation at cell & pack level using multi-physics tool and examined the thermal behavior of Li-ion battery.</li>
+          <li>Actively involved in lithium-ion battery (NMC) testing, cell modeling, thermal simulation, and Validation for different C-rates of charging and discharging cycles.</li>
         </ul>
       </div>
     </section>
+
+
+    <section id="projects">
+      <h2>Key Projects</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Vehicle Control for Autonomous Driving</h3>
+          <p>Implemented a PID-based longitudinal controller to track desired velocity from waypoints and maintain smooth acceleration/braking.Designed a Stanley controller for lateral guidance, computing cross-track and heading errors to generate steering commands.Integrated both controllers into a unified Python control pipeline, validated in CARLA Simulator with trajectory tracking tasks.</p>
+          <p><a href="#" target="_blank" rel="noopener">Paper</a> · <a href="#" target="_blank" rel="noopener">GitHub</a></p>
+        </div>
+        <div class="card">
+          <h3>Motor Speed Control</h3>
+          <p>Modeled and linearized a 3-phase induction motor, validated system dynamics through large-signal and root locus analysis.Designed and tuned parallel PI controllers for flux and speed regulation, achieving \5% overshoot and settling time under 3 seconds.  Performed comparative analysis between linearized and nonlinear models to highlight stability margins and accuracy</p>
+          <p><a href="#" target="_blank" rel="noopener">Code</a></p>
+        </div>
+        <div class="card">
+          <h3>Brake Pressure Control</h3>
+          <p>Agentic CV pipeline integrating YOLOv8, SAM, CLIP, and BLIP-2/LLaVA with ReAct planner for natural-language driven tasks.</p>
+          <p><a href="#" target="_blank" rel="noopener">Demo</a> · <a href="#" target="_blank" rel="noopener">GitHub</a></p>
+        </div>
+        <div class="card">
+          <h3>Full Car Vehicle Dynamics Simulation</h3>
+          <p>Integration of YOLO with Gaussian Splatting for object-level 3D reconstruction, enabling 60 FPS rendering with 35% faster training.</p>
+          <p><a href="#" target="_blank" rel="noopener">Project</a></p>
+        </div>
+        <div class="card">
+          <h3>Mini-robotic Arm</h3>
+          <p>Attention-based sequence-to-sequence model for Latin to Devanagari transliteration using the Aksharantar dataset.</p>
+          <p><a href="https://github.com/swapnilmn/TranslitRNN" target="_blank" rel="noopener">GitHub</a></p>
+        </div>
+        <div class="card">
+          <h3>All-Terrain Vehicle Design</h3>
+          <p>Feedforward neural network with backpropagation from scratch, achieving 89.56% validation accuracy with comprehensive hyperparameter exploration.</p>
+          <p><a href="https://github.com/swapnilmn/Image-Classification-with-Backpropagation" target="_blank" rel="noopener">GitHub</a></p>
+        </div>
+      </div>
+    </section>
+
 
     <section id="education">
       <h2>Education</h2>
